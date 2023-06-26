@@ -3,7 +3,7 @@
 
 In this data engineering project, we'll start by producing raw order data. The sample data looks like this:
 
-```json
+```{json}
 {'order_id': 1, 'created_at': '2023-06-18 12:33:12', 'platform_id': 1, 'product_id': 5, 'quantity': 7, 'customer_id': 928, 'payment_method': 'paypal'}
 {'order_id': 2, 'created_at': '2023-06-18 12:33:13', 'platform_id': 4, 'product_id': 13, 'quantity': 2, 'customer_id': 533, 'payment_method': 'bank transfer'}
 {'order_id': 3, 'created_at': '2023-06-18 12:33:14', 'platform_id': 2, 'product_id': 18, 'quantity': 3, 'customer_id': 65, 'payment_method': 'debit card'}
