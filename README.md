@@ -1,7 +1,8 @@
-# Building a Streaming Data Pipeline with Open Source Stacks
+# streaming_data_processing
+In this project, our goal is to build a streaming data pipeline with open source stacks. Below is the architecture of the pipeline and the preview of the dashboard.
 ![Pipeline Architecture](sdp_thumbnail.png)
 
-In this data engineering project, we'll start by producing raw order data. The sample data looks like this:
+We'll start the project by producing raw order data. The sample data looks like this:
 
 ```{json}
 {'order_id': 1, 'created_at': '2023-06-18 12:33:12', 'platform_id': 1, 'product_id': 5, 'quantity': 7, 'customer_id': 928, 'payment_method': 'paypal'}
@@ -9,7 +10,7 @@ In this data engineering project, we'll start by producing raw order data. The s
 {'order_id': 3, 'created_at': '2023-06-18 12:33:14', 'platform_id': 2, 'product_id': 18, 'quantity': 3, 'customer_id': 65, 'payment_method': 'debit card'}
 ```
 
-Next, we'll stream this data in real-time using Kafka and process it in microbatch fashion using Spark Streaming. Then, we'll load the processed order data into a Cassandra database. Additionally, we'll load the aggregated order data into a MySQL database and perform some analytical operations on the aggregated data. The goal is to generate a (near) real-time dashboard using Streamlit.
+Next, we'll stream this data in real-time using Kafka and process it in microbatch fashion using Spark Streaming. Then, we'll load the processed order data into a Cassandra database. Additionally, we'll load the aggregated order data into a MySQL database and perform some analytical operations on the aggregated data. Finally, we'll generate a (near) real-time dashboard using Streamlit.
 
 You can find a comprehensive guide of this project in the following four articles:
 1. [Project Overview And Environment Setup (Part 1)](https://supertype.ai/notes/streaming-data-processing-part-1/)
