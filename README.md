@@ -2,7 +2,7 @@
 In this project, our goal is to build a streaming data pipeline with open source stacks. Below is the architecture of the pipeline and the preview of the dashboard.
 ![Pipeline Architecture](sdp_thumbnail.png)
 
-We'll start the project by producing raw order data. The sample data looks like this:
+We'll start the project by setting up the environment using Docker Compose, and then configuring our Cassandra (OLTP) and MySQL (OLAP) databases. Once the databases are ready, we will simulate the production of raw order data. The sample data looks like this:
 
 ```{json}
 {'order_id': 1, 'created_at': '2023-06-18 12:33:12', 'platform_id': 1, 'product_id': 5, 'quantity': 7, 'customer_id': 928, 'payment_method': 'paypal'}
